@@ -1,0 +1,21 @@
+parameters: {}
+environment:
+  JWT-SECRET: YfdIqIljgLnzQsvXANmyNPPWsAJRjNKguyBsovS8mdpg
+packages:
+    - name: auth
+      shared: false
+      environment: {}
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: check
+          binary: false
+          main: "main"
+          runtime: php:8.2
+          web: true
+          webSecure: false
+          parameters: {}
+          environment: {}
+          annotations: {}
+          limits:
+            memory: 128
